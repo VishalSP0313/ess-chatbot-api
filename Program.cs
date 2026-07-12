@@ -46,4 +46,7 @@ app.UseCors("AllowAngular");
 app.UseAuthorization();
 app.MapControllers();
 
+
+var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+
 app.Run();
